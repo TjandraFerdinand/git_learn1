@@ -20,7 +20,7 @@ foreach ($row as $key =>$val) {
    echo "</tr>";
 }
 echo "</table>";
-
+echo $this->pagination->create_links();
 
 echo form_close();
 

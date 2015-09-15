@@ -1,5 +1,4 @@
 <?php
-
 class MY_Exceptions extends CI_Exceptions
    {
       public function show_error($heading, $message, $template = 'error_general', $status_code = 500)
@@ -19,6 +18,4 @@ class MY_Exceptions extends CI_Exceptions
          }
          $this->parent($heading, $message, $template, $status_code);
       }
-
-
 ?>

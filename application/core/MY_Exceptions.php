@@ -20,5 +20,4 @@ class MY_Exceptions extends CI_Exceptions
          $this->parent($heading, $message, $template, $status_code);
       }
 
-
 ?>
