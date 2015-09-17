@@ -20,11 +20,7 @@ class User extends CI_Controller {
 		$this->load->model('Task1_ferdi');
 		$data['row'] = $this->Task1_ferdi->select_db();
 		$this->load->view('task1_index',$data);
-   		$config['base_url'] = 'http://test-ferdi.com/';     	
-		$config['total_rows'] = 10;
-		$config['per_page'] = 2; 
 
-		$this->pagination->initialize($config); 
 		
 /*		$sql = <<<EOF
                         select * from `user`;
@@ -125,7 +121,6 @@ EOF;
 	
 	public function detail($id)
 	{
-
 		$this->load->model('Task1_ferdi');
 		$data = $this->Task1_ferdi->get_user_detail($id);
                 $assign['user_detail_info'] = $data[0];
